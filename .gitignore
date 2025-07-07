@@ -1,0 +1,43 @@
+# === Root ===
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+
+# === Node Modules (client + server) ===
+**/node_modules/
+
+# === Logs ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS Generated ===
+Thumbs.db
+.DS_Store
+
+# === Build Output ===
+**/dist/
+**/build/
+**/.next/
+**/out/
+**/coverage/
+
+# === Vercel or other platform folders ===
+.vercel/
+.next/
+.netlify/
+.render/
+
+# === IDE Folders ===
+.vscode/
+.idea/
+
+# === Typescript ===
+**/*.tsbuildinfo
+
+# === Optional Cache ===
+**/.cache/
