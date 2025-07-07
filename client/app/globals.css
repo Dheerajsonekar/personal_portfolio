@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+/* ---------- Base styles ---------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-black text-gray-800 dark:text-gray-100;
+  }
+}
+
+/* ---------- Component styles ---------- */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-5 py-2 rounded-md shadow hover:bg-blue-700 transition font-semibold;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md dark:border-gray-700 bg-white dark:bg-gray-900 text-sm dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .nav-link {
+    @apply text-gray-800 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium;
+  }
+}
+
+/* ---------- Utilities for animations ---------- */
+@layer utilities {
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

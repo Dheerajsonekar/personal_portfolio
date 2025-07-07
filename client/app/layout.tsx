@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="min-h-screen flex flex-col font-sans">
         <Navbar />
-        <main className="flex-grow container mx-auto px-4 py-6">
+        <main>
           {children}
         </main>
         <Footer />
