@@ -27,8 +27,11 @@ export default function Navbar() {
           <Link href="#projects" className="nav-link">Projects</Link>
           <Link href="#skills" className="nav-link">Skills</Link>
           <Link href="#education" className="nav-link">Education</Link>
+          <Link href="#certifications" className="nav-link">Certifications</Link>
+          <Link href="#achievements" className="nav-link">Achievements</Link>
+          <Link href="#testimonials" className="nav-link">Testimonials</Link>
           <Link href="#resume" className="nav-link">Resume</Link>
-          <Link href="#contact" className="nav-link">Contact</Link>
+          <Link href="#contact" className="nav-link">Contact me</Link>
         </nav>
       </div>
     </header>

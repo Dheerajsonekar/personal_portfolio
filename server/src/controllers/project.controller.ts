@@ -24,3 +24,13 @@ export const deleteProject = async (req: Request, res: Response) => {
     res.status(400).json({ error: error.message });
   }
 };
+
+export const updateProject = async (req: Request, res: Response) => {
+  try {
+    const updated = await Project.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updated) return res.status(404).json({ error: 'Project not found' });
+    res.status(200).json(updated);
+  } catch (error: any) {
+    res.status(400).json({ error: error.message });
+  }
+};
