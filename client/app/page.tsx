@@ -268,14 +268,14 @@ export default function HomePage() {
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <p className="text-gray-700 dark:text-gray-300 italic">
-                "Dheeraj delivered our web app with high-quality code and impressive attention to detail. His backend logic and API integration were solid!"
+                &quot;Dheeraj delivered our web app with high-quality code and impressive attention to detail. His backend logic and API integration were solid!&quot;
               </p>
               <p className="text-sm text-blue-500 mt-2 text-right">– Client, Freelance Project</p>
             </div>
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <p className="text-gray-700 dark:text-gray-300 italic">
-                "Always reliable and quick to communicate. His ability to handle full-stack requirements made our startup MVP possible."
+                &quot;Always reliable and quick to communicate. His ability to handle full-stack requirements made our startup MVP possible.&quot;
               </p>
               <p className="text-sm text-blue-500 mt-2 text-right">– Intern Manager, HashedBit Innovations</p>
             </div>
