@@ -305,7 +305,7 @@ export default function HomePage() {
               e.preventDefault();
               const form = new FormData(e.currentTarget as HTMLFormElement);
               try {
-                await axios.post('http://localhost:5000/api/contact', {
+                await axios.post('https://portfolio-backend1-q6cx.onrender.com/api/contact', {
                   name: form.get('name'),
                   email: form.get('email'),
                   message: form.get('message'),
