@@ -1,4 +1,13 @@
-export default function ProjectCard({ title, description, githubUrl, demoUrl, techStack }: any) {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  githubUrl: string;
+  demoUrl: string;
+  techStack: string[];
+  _id?: string;
+}
+
+export default function ProjectCard({ title, description, githubUrl, demoUrl, techStack }: ProjectCardProps) {
   return (
     <div className="p-4 border rounded-xl shadow hover:shadow-lg transition bg-white dark:bg-gray-900">
       <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{title}</h3>
@@ -11,10 +20,10 @@ export default function ProjectCard({ title, description, githubUrl, demoUrl, te
         ))}
       </div>
       <div className="flex gap-4 text-sm">
-        <a href={githubUrl} target="_blank" className="text-blue-600 hover:underline dark:text-blue-400">
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
           GitHub
         </a>
-        <a href={demoUrl} target="_blank" className="text-blue-600 hover:underline dark:text-blue-400">
+        <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
           Demo
         </a>
       </div>

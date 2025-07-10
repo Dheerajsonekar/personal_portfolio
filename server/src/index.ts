@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 import cors from 'cors';
 
-import projectRoutes from './routes/project.routes';
+
 import contactRoutes from './routes/contact.routes';
 
 
@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/projects', projectRoutes);
+
 app.use('/api/contact', contactRoutes);
 
 

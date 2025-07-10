@@ -1,12 +1,14 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+
 import axios from 'axios';
 import ProjectCard from '@/components/ProjectCard';
 import SocialIcons from '@/components/SocialIcons';
 
+
+
 export default function HomePage() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Fresh Store",
       description: "A full-stack app with vendor & customer dashboards, payment, and live updates.",
@@ -63,8 +65,34 @@ export default function HomePage() {
   return (
     <div className="scroll-smooth pt-14">
       {/* Hero Section */}
-      <section id="hero" className=" w-full text-center  py-32 sm:py-40 bg-gradient-to-b from-blue-50 to-white dark:from-gray-950 dark:to-black">
-        <div className="w-full mx-auto space-y-6 animate-slide-in px-4">
+      <section id="hero" className="relative w-full text-center py-32 sm:py-40 bg-gradient-to-b from-blue-50 to-white dark:from-gray-950 dark:to-black overflow-hidden">
+
+        {/* Bouncing balls background */}
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+          {/* Ball 1 */}
+          <div className="absolute w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full left-[10%] animate-ball-bounce-1"></div>
+
+          {/* Ball 2 */}
+          <div className="absolute w-30 h-30 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full left-[20%] animate-ball-bounce-2"></div>
+
+          {/* Ball 3 */}
+          <div className="absolute w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full left-[30%] animate-ball-bounce-3"></div>
+
+          {/* Ball 4 */}
+          <div className="absolute w-[80px] h-[80px] bg-gradient-to-br from-amber-400 to-amber-600 rounded-full left-[50%] animate-ball-bounce-4"></div>
+
+          {/* Ball 5 */}
+          <div className="absolute w-[66px] h-[66px] bg-gradient-to-br from-red-400 to-red-600 rounded-full left-[70%] animate-ball-bounce-5"></div>
+
+          {/* Ball 6 */}
+          <div className="absolute w-32 h-32 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full left-[80%] animate-ball-bounce-6"></div>
+
+          {/* Ball 7 */}
+          <div className="absolute w-[30px] h-[30px] bg-gradient-to-br from-pink-400 to-pink-600 rounded-full left-[90%] animate-ball-bounce-7"></div>
+        </div>
+
+        {/* Main content */}
+        <div className="relative z-10 w-full mx-auto space-y-6 animate-slide-in px-4">
           <Image
             src="/my-photo3.jpg"
             alt="Dheeraj Sonekar"
@@ -72,41 +100,51 @@ export default function HomePage() {
             height={280}
             className="mx-auto rounded-full shadow-lg border-4 border-white dark:border-gray-800 hover:scale-105 transition-transform duration-300"
           />
-          <h1 className="text-2xl sm:text-4xl  text-gray-900 dark:text-white">
+          <h1 className="text-2xl sm:text-4xl text-gray-900 dark:text-white animate-name-slide ">
             Dheeraj Sonekar
           </h1>
-          <p className="text-3xl sm:text-5xl font-semibold text-gray-700 dark:text-gray-100 mt-2">
+          <p className="text-3xl sm:text-5xl font-semibold gradient-text mt-2">
             Full Stack Developer
           </p>
 
           <SocialIcons />
-
         </div>
       </section>
 
+     
       {/* Experience Section */}
-      <section id="experience" className="bg-white dark:bg-gray-900 py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">Experience</h2>
-          <div className="space-y-8">
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">Full Stack Developer – Intern</h3>
-              <p className="text-sm text-gray-500">HashedBit Innovations ---Jan 2024 - june 2024 </p>
-              <p className="text-sm text-gray-500"></p>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">Built  full-stack applications using React, Sql, and Express. Worked on integration and backend APIs.</p>
-            </div>
+      <section id="experience" className="relative overflow-hidden bg-white dark:bg-gray-900 py-20 px-6">
+        {/* Background animation */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute w-72 h-72 bg-gradient-to-tr from-purple-300 to-pink-300 opacity-20 blur-3xl top-10 left-[-100px] animate-pulse-slow" />
+          <div className="absolute w-96 h-96 bg-gradient-to-br from-blue-300 to-cyan-300 opacity-20 blur-3xl bottom-[-80px] right-[-120px] animate-float" />
+        </div>
 
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white reveal">Experience</h2>
+
+          <div className="space-y-8">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
+              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                Full Stack Developer – Intern
+              </h3>
+              <p className="text-sm text-gray-500">HashedBit Innovations – Jan 2024 - June 2024</p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                Built full-stack applications using React, SQL, and Express. Worked on integration and backend APIs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="bg-gray-50 dark:bg-black py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project: any) => (
-              <ProjectCard key={project._id} {...project} />
+            {projects.map((project: Project) => (
+              <ProjectCard key={project._id || project.title} {...project} />
             ))}
           </div>
         </div>
@@ -221,14 +259,14 @@ export default function HomePage() {
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <p className="text-gray-700 dark:text-gray-300 italic">
-                “Dheeraj delivered our web app with high-quality code and impressive attention to detail. His backend logic and API integration were solid!”
+                "Dheeraj delivered our web app with high-quality code and impressive attention to detail. His backend logic and API integration were solid!"
               </p>
               <p className="text-sm text-blue-500 mt-2 text-right">– Client, Freelance Project</p>
             </div>
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <p className="text-gray-700 dark:text-gray-300 italic">
-                “Always reliable and quick to communicate. His ability to handle full-stack requirements made our startup MVP possible.”
+                "Always reliable and quick to communicate. His ability to handle full-stack requirements made our startup MVP possible."
               </p>
               <p className="text-sm text-blue-500 mt-2 text-right">– Intern Manager, HashedBit Innovations</p>
             </div>
@@ -265,7 +303,8 @@ export default function HomePage() {
                 });
                 e.currentTarget.reset();
                 alert('Message sent!');
-              } catch (err) {
+              } catch (error) {
+                console.error('Failed to send message:', error);
                 alert('Failed to send message.');
               }
             }}
