@@ -7,6 +7,15 @@ import SocialIcons from '@/components/SocialIcons';
 
 
 
+type Project = {
+  title: string;
+  description: string;
+  githubUrl: string;
+  demoUrl: string;
+  techStack: string[];
+  _id?: string;
+};
+
 export default function HomePage() {
   const projects: Project[] = [
     {
