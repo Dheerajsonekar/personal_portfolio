@@ -23,21 +23,21 @@ export default function HomePage() {
       description: "A full-stack app with vendor & customer dashboards, payment, and live updates.",
       githubUrl: "https://github.com/Dheerajsonekar/milk-delivery-platform",
       demoUrl: "",
-      techStack: ["Next.js", "MongoDB","PostgreSQL", "Express", "Tailwind", "TypeScript"]
+      techStack: ["Next.js", "MongoDB", "PostgreSQL", "Express", "Tailwind", "TypeScript"]
     },
     {
       title: "Food delivery platform",
       description: "Food delivery platform for resturant with client panel .",
       githubUrl: "https://github.com/Dheerajsonekar/food-delivery-website",
-      demoUrl: "", 
-      techStack: ["React.js","Express"," NoSql", "javaScript", "Bootstrap"]
+      demoUrl: "",
+      techStack: ["React.js", "Express", " NoSql", "javaScript", "Bootstrap"]
     },
     {
       title: "Expense Tracker",
       description: "Track daily expenses with authentication and analytics dashboard.",
       githubUrl: "https://github.com/Dheerajsonekar/full-stack-expense-app",
       demoUrl: "",
-      techStack: [ "Node.js", "Sql", "javascript", "JWT", "CSS"]
+      techStack: ["Node.js", "Sql", "javascript", "JWT", "CSS"]
     },
     {
       title: "Charity donation Website",
@@ -46,12 +46,12 @@ export default function HomePage() {
       demoUrl: "",
       techStack: ["nodejs", "Express", "Mysql", "javascript", "html/css"]
     },
-    
+
     {
       title: "Ecommerce Website",
       description: "Ecommerce webstie using EJS and Node js",
       githubUrl: "https://github.com/Dheerajsonekar/ecommerce-website",
-      demoUrl: "", 
+      demoUrl: "",
       techStack: ["Nodejs", "sql", "ejs", "javascript", "css"]
     }
   ];
@@ -106,7 +106,7 @@ export default function HomePage() {
         </div>
       </section>
 
-     
+
       {/* Experience Section */}
       <section id="experience" className="relative overflow-hidden bg-white dark:bg-gray-900 py-20 px-6">
         {/* Background animation */}
@@ -132,9 +132,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Services Section */}
+
+      <section id="services" className="relative overflow-hidden bg-white dark:bg-gray-950 py-20 px-6">
+        {/* Background animation */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute w-72 h-72 bg-gradient-to-tr from-purple-300 to-pink-300 opacity-20 blur-3xl top-10 left-[-100px] animate-pulse-slow" />
+          <div className="absolute w-96 h-96 bg-gradient-to-br from-blue-300 to-cyan-300 opacity-20 blur-3xl bottom-[-80px] right-[-120px] animate-float" />
+        </div>
+
+        <div className="max-w-5xl mx-auto">
+          {/* Section Heading */}
+          <h2 className="text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white">My Services</h2>
+
+          {/* Freelancing Links */}
+          <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm sm:text-base">
+            <a href="https://www.fiverr.com" target="_blank" className="text-blue-600 hover:underline">Fiverr</a>
+            <a href="https://www.freelancer.com" target="_blank" className="text-blue-600 hover:underline">Freelancer</a>
+            <a href="https://www.upwork.com" target="_blank" className="text-blue-600 hover:underline">Upwork</a>
+            <a href="https://www.peopleperhour.com" target="_blank" className="text-blue-600 hover:underline">PeoplePerHour</a>
+            <a href="https://www.truelancer.com" target="_blank" className="text-blue-600 hover:underline">Truelancer</a>
+            <a href="mailto:youremail@example.com" className="text-blue-600 hover:underline">Email for Custom Project</a>
+          </div>
+
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Web Development</h3>
+              <p className="text-sm text-gray-500">React / Next.js / APIs</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Mobile-Ready Dashboards</h3>
+              <p className="text-sm text-gray-500">Admin panels & client portals</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">E-commerce Solutions</h3>
+              <p className="text-sm text-gray-500">Cart / Payment / Delivery system</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Digital Platform Setup</h3>
+              <p className="text-sm text-gray-500">Convert offline to online</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">AI Integrations</h3>
+              <p className="text-sm text-gray-500">Chatbot / GPT tools / Automation</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Game UI / Interactive Apps</h3>
+              <p className="text-sm text-gray-500">Mini-games / Engaging UIs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Projects Section */}
-      <section id="projects" className="bg-gray-50 dark:bg-black py-20 px-6">
+      <section id="projects" className="dark:bg-gray-900 dark:bg-black py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="bg-gray dark:bg-gray-900 py-20 px-6">
+      <section id="skills" className="bg-gray dark:bg-gray-950 py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white">Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
@@ -160,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="bg-white dark:bg-gray-950 py-20 px-6">
+      <section id="education" className="bg-white dark:bg-gray-900 py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
             Education
@@ -189,7 +243,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Certifications Section */}
-      <section id="certifications" className="bg-gray-50 dark:bg-gray-900 py-20 px-6">
+      <section id="certifications" className="bg-gray-50 dark:bg-gray-950 py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
             Certifications
@@ -216,26 +270,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Achievements Section */}
-      <section id="achievements" className="bg-white dark:bg-gray-950 py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
-            Achievements
-          </h2>
-
-          <div className="space-y-6">
-            
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-green-600 dark:text-green-400">
-                Ranked 1st in University Hackathon – 2023
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Built a real-time collaborative task management tool using MERN stack.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Testimonials Section */}
       <section id="testimonials" className="bg-gray-50 dark:bg-gray-900 py-20 px-6">

@@ -24,11 +24,12 @@ export default function Navbar() {
         <nav className="flex space-x-4">
           <Link href="#" className="nav-link">Home</Link>
           <Link href="#experience" className="nav-link">Experience</Link>
+          <Link href="#services" className="nav-link">Services</Link>
           <Link href="#projects" className="nav-link">Projects</Link>
           <Link href="#skills" className="nav-link">Skills</Link>
           <Link href="#education" className="nav-link">Education</Link>
           <Link href="#certifications" className="nav-link">Certifications</Link>
-          <Link href="#achievements" className="nav-link">Achievements</Link>
+          
           <Link href="#testimonials" className="nav-link">Testimonials</Link>
           <Link href="#resume" className="nav-link">Resume</Link>
           <Link href="#contact" className="nav-link">Contact me</Link>
