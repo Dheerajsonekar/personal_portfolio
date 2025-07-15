@@ -41,3 +41,5 @@ Thumbs.db
 
 # === Optional Cache ===
 **/.cache/
+
+**/package-lock.json
