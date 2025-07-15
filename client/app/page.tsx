@@ -21,52 +21,38 @@ export default function HomePage() {
     {
       title: "Fresh Store",
       description: "A full-stack app with vendor & customer dashboards, payment, and live updates.",
-      githubUrl: "https://github.com/Dheerajsonekar/milk-delivery-app",
-      demoUrl: "https://milk-app.vercel.app",
-      techStack: ["Next.js", "MongoDB", "Express", "Tailwind", "TypeScript"]
+      githubUrl: "https://github.com/Dheerajsonekar/milk-delivery-platform",
+      demoUrl: "",
+      techStack: ["Next.js", "MongoDB","PostgreSQL", "Express", "Tailwind", "TypeScript"]
+    },
+    {
+      title: "Food delivery platform",
+      description: "Food delivery platform for resturant with client panel .",
+      githubUrl: "https://github.com/Dheerajsonekar/food-delivery-website",
+      demoUrl: "", 
+      techStack: ["React.js","Express"," NoSql", "javaScript", "Bootstrap"]
     },
     {
       title: "Expense Tracker",
       description: "Track daily expenses with authentication and analytics dashboard.",
-      githubUrl: "https://github.com/Dheerajsonekar/expense-tracker",
-      demoUrl: "https://expense-app.vercel.app",
-      techStack: ["React", "Node.js", "MongoDB", "JWT", "CSS"]
-    },
-    {
-      title: "Food delivery platform",
-      description: "Personal portfolio built using Next.js with dark mode and admin panel.",
-      githubUrl: "https://github.com/Dheerajsonekar/portfolio",
-      demoUrl: "https://dheeraj.dev", // replace with your domain
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"]
+      githubUrl: "https://github.com/Dheerajsonekar/full-stack-expense-app",
+      demoUrl: "",
+      techStack: [ "Node.js", "Sql", "javascript", "JWT", "CSS"]
     },
     {
       title: "Charity donation Website",
-      description: "Personal portfolio built using Next.js with dark mode and admin panel.",
-      githubUrl: "https://github.com/Dheerajsonekar/portfolio",
-      demoUrl: "https://dheeraj.dev", // replace with your domain
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"]
+      description: "Charity donation platform with user authentication and admin panel",
+      githubUrl: "https://github.com/Dheerajsonekar/charity_donation_platform",
+      demoUrl: "",
+      techStack: ["nodejs", "Express", "Mysql", "javascript", "html/css"]
     },
-    {
-      title: "Inventory management",
-      description: "Personal portfolio built using Next.js with dark mode and admin panel.",
-      githubUrl: "https://github.com/Dheerajsonekar/portfolio",
-      demoUrl: "https://dheeraj.dev", // replace with your domain
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"]
-    },
-
-    {
-      title: "To do list website",
-      description: "Personal portfolio built using Next.js with dark mode and admin panel.",
-      githubUrl: "https://github.com/Dheerajsonekar/portfolio",
-      demoUrl: "https://dheeraj.dev", // replace with your domain
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"]
-    },
+    
     {
       title: "Ecommerce Website",
-      description: "Personal portfolio built using Next.js with dark mode and admin panel.",
-      githubUrl: "https://github.com/Dheerajsonekar/portfolio",
-      demoUrl: "https://dheeraj.dev", // replace with your domain
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"]
+      description: "Ecommerce webstie using EJS and Node js",
+      githubUrl: "https://github.com/Dheerajsonekar/ecommerce-website",
+      demoUrl: "", 
+      techStack: ["Nodejs", "sql", "ejs", "javascript", "css"]
     }
   ];
 
