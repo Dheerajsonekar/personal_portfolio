@@ -103,7 +103,7 @@ export default function HomePage() {
         {/* Main content */}
         <div className="relative z-10 w-full mx-auto space-y-6 animate-slide-in px-4">
           <Image
-            src="/my-photo3.jpg"
+            src="/profile.jpeg"
             alt="Dheeraj Sonekar"
             width={280}
             height={280}
@@ -238,14 +238,7 @@ export default function HomePage() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-green-600 dark:text-green-400">
-                LeetCode Top 5% Global – 350+ Questions Solved
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Solved advanced DSA problems and regularly participated in contests.
-              </p>
-            </div>
+            
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <h3 className="text-lg font-semibold text-green-600 dark:text-green-400">
                 Ranked 1st in University Hackathon – 2023
@@ -288,7 +281,7 @@ export default function HomePage() {
       <section id="resume" className="bg-white dark:bg-gray-950 py-20 text-center px-4">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">Resume</h2>
         <a
-          href="/resume.pdf"
+          href="/resume_dheeraj_sonekar.pdf"
           download
           className="btn-primary inline-block"
         >
