@@ -200,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="relative dark:bg-gray-900 py-20 px-6">
+      <section id="projects" className="relative bg-gray-50 dark:bg-gray-900 py-20 px-6">
         {/* Professional Data Flow */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent top-1/4 animate-pulse" style={{animationDuration: '3s'}}></div>
@@ -228,7 +228,7 @@ export default function HomePage() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="relative bg-gray dark:bg-gray-950 py-20 px-6">
+      <section id="skills" className="relative bg-gray-100 dark:bg-gray-950 py-20 px-6">
         {/* Professional Tech Elements */}
         <div className="absolute inset-0 pointer-events-none z-0 opacity-30">
           <div className="absolute w-4 h-4 border border-blue-500/40 rounded top-20 left-20 animate-pulse" style={{animationDuration: '2s'}}></div>
