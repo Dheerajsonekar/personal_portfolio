@@ -16,11 +16,18 @@ type Project = {
 export default function HomePage() {
   const projects: Project[] = [
     {
+      title: "School Management system(freelancing project)",
+      description: "A full-stack app with student, teacher and principal dashboards, payment, and live updates.",
+      githubUrl: "https://github.com/Dheerajsonekar/Head_Sir_School",
+      demoUrl: "https://head-sir-schoolfrontend.vercel.app/",
+      techStack: ["Next.js", "MongoDB", "PostgreSQL", "Express", "Tailwind", "TypeScript", "nodejs"]
+    },
+    {
       title: "Fresh Store",
       description: "A full-stack app with vendor & customer dashboards, payment, and live updates.",
       githubUrl: "https://github.com/Dheerajsonekar/milk-delivery-platform",
       demoUrl: "https://milk-delivery-platform-sjlc.vercel.app/",
-      techStack: ["Next.js", "MongoDB", "PostgreSQL", "Express", "Tailwind", "TypeScript"]
+      techStack: ["Next.js", "MongoDB", "PostgreSQL", "Express", "Tailwind", "TypeScript", "nodejs"]
     },
     {
       title: "Charity donation Website",
@@ -34,7 +41,7 @@ export default function HomePage() {
       description: "Food delivery platform for resturant with client panel .",
       githubUrl: "https://github.com/Dheerajsonekar/food-delivery-website",
       demoUrl: "",
-      techStack: ["React.js", "Express", " NoSql", "javaScript", "Bootstrap"]
+      techStack: ["React.js", "Express", " NoSql", "javaScript", "Bootstrap", "nodejs"]
     },
     {
       title: "Expense Tracker",
