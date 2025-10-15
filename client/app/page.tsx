@@ -128,7 +128,8 @@ export default function HomePage() {
 
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white reveal">Experience</h2>
-          <div className="space-y-8">
+          
+          <div className="space-y-8 ">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                 Software engineer
@@ -149,8 +150,6 @@ export default function HomePage() {
  
               </p>
             </div>
-          </div>
-          <div className="space-y-8 my-auto">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                 Full Stack Developer – Intern
