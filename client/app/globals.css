@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+/* Force proper theme detection FIRST - before any other styles */
+html {
+  color-scheme: light dark;
+}
+
+/* Ensure dark mode works in all browsers/apps */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html {
+    background-color: #000000 !important;
+  }
+  
+  body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+}
+
+/* Override for when .dark class is present */
+html.dark {
+  color-scheme: dark;
+  background-color: #000000 !important;
+}
+
+html.dark body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
 /* ---------- Base styles ---------- */
 @layer base {
   html {
@@ -7,7 +39,16 @@
   }
 
   body {
-    @apply bg-white dark:bg-black text-gray-800 dark:text-gray-100;
+    @apply text-gray-800 dark:text-gray-100;
+    background-color: #ffffff;
+  }
+  
+  /* Ensure dark mode override */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+    }
   }
 }
 
@@ -131,25 +172,26 @@
       opacity: 0.9;
     }
   }
+  
   @keyframes pulseSlow {
-  0%, 100% {
-    opacity: 0.2;
-    transform: scale(1);
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(1.05);
+    }
   }
-  50% {
-    opacity: 0.4;
-    transform: scale(1.05);
-  }
-}
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
   }
-  50% {
-    transform: translateY(-20px);
-  }
-}
 
   /* Responsive adjustments for mobile */
   @media (max-width: 640px) {
@@ -165,46 +207,51 @@
   }
 
   /* Dheeraj animation - slide from bottom */
-.animate-name-slide {
-  animation: nameSlide 1s ease-out forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-@keyframes nameSlide {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .animate-name-slide {
+    animation: nameSlide 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
   }
-}
 
-/* Image zoom fade */
-.animate-image-zoom {
-  animation: imageZoom 1.2s ease-out forwards;
-  opacity: 0;
-  transform: scale(0.95);
-}
-
-@keyframes imageZoom {
-  to {
-    opacity: 1;
-    transform: scale(1);
+  @keyframes nameSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
 
-/* Gradient text animation */
-.gradient-text {
-  background: linear-gradient(90deg, #06b6d4, #8b5cf6, #f59e0b, #06b6d4);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientMove 4s ease infinite;
-}
+  /* Image zoom fade */
+  .animate-image-zoom {
+    animation: imageZoom 1.2s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.95);
+  }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+  @keyframes imageZoom {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
+  /* Gradient text animation */
+  .gradient-text {
+    background: linear-gradient(90deg, #06b6d4, #8b5cf6, #f59e0b, #06b6d4);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientMove 4s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes gridSlide {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(40px, 40px); }
+  }
 }

@@ -19,8 +19,15 @@ export default function HomePage() {
       title: "Fresh Store",
       description: "A full-stack app with vendor & customer dashboards, payment, and live updates.",
       githubUrl: "https://github.com/Dheerajsonekar/milk-delivery-platform",
-      demoUrl: "",
+      demoUrl: "https://milk-delivery-platform-sjlc.vercel.app/",
       techStack: ["Next.js", "MongoDB", "PostgreSQL", "Express", "Tailwind", "TypeScript"]
+    },
+    {
+      title: "Charity donation Website",
+      description: "Charity donation platform with user authentication and admin panel",
+      githubUrl: "https://github.com/Dheerajsonekar/charity_donation_platform",
+      demoUrl: "https://charity-platform-tchn.onrender.com",
+      techStack: ["nodejs", "Express", "Mysql", "javascript", "html/css"]
     },
     {
       title: "Food delivery platform",
@@ -36,13 +43,7 @@ export default function HomePage() {
       demoUrl: "",
       techStack: ["Node.js", "Sql", "javascript", "JWT", "CSS"]
     },
-    {
-      title: "Charity donation Website",
-      description: "Charity donation platform with user authentication and admin panel",
-      githubUrl: "https://github.com/Dheerajsonekar/charity_donation_platform",
-      demoUrl: "",
-      techStack: ["nodejs", "Express", "Mysql", "javascript", "html/css"]
-    },
+    
     {
       title: "Ecommerce Website",
       description: "Ecommerce webstie using EJS and Node js",
@@ -120,6 +121,28 @@ export default function HomePage() {
 
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white reveal">Experience</h2>
+          <div className="space-y-8">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
+              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                Software engineer
+              </h3>
+              <p className="text-sm text-gray-500">Freelancer – June 2024 - present</p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                
+                Built full-stack applications using React, SQL, and Express. Worked on integration and backend APIs.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                
+               Developed and delivered a full-stack School Management System with dashboards, auth, payments integration.
+ 
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                
+              Developing a website for a Soya Paneer startup, covering backend, frontend with branding.
+ 
+              </p>
+            </div>
+          </div>
           <div className="space-y-8">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
@@ -426,32 +449,9 @@ export default function HomePage() {
           {/* Contact Info */}
           <div className="text-center text-gray-700 dark:text-gray-300 mb-6 space-y-2">
             <p><strong>Email:</strong> <a href="mailto:dheerajsonekar166@gmail.com" className="text-blue-600 dark:text-blue-400">dheerajsonekar166@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+918858588160" className="text-blue-600 dark:text-blue-400">+91 88585 88160</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918858588160" className="text-blue-600 dark:text-blue-400">+91 7905944824</a></p>
           </div>
-          <form
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const form = new FormData(e.currentTarget as HTMLFormElement);
-              try {
-                await axios.post('https://portfolio-backend1-q6cx.onrender.com/api/contact', {
-                  name: form.get('name'),
-                  email: form.get('email'),
-                  message: form.get('message'),
-                });
-                e.currentTarget.reset();
-                alert('Message sent!');
-              } catch (error) {
-                console.error('Failed to send message:', error);
-                alert('Failed to send message.');
-              }
-            }}
-            className="space-y-4"
-          >
-            <input name="name" placeholder="Your Name" className="input w-full" required />
-            <input name="email" type="email" placeholder="Your Email" className="input w-full" required />
-            <textarea name="message" placeholder="Your Message" className="input w-full h-32" required />
-            <button type="submit" className="btn-primary w-full">Send Message</button>
-          </form>
+          
         </div>
       </section>
 
