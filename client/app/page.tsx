@@ -458,7 +458,30 @@ export default function HomePage() {
             <p><strong>Email:</strong> <a href="mailto:dheerajsonekar166@gmail.com" className="text-blue-600 dark:text-blue-400">dheerajsonekar166@gmail.com</a></p>
             <p><strong>Phone:</strong> <a href="tel:+918858588160" className="text-blue-600 dark:text-blue-400">+91 7905944824</a></p>
           </div>
-          
+           <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = new FormData(e.currentTarget as HTMLFormElement);
+              try {
+                await axios.post('https://portfolio-backend1-q6cx.onrender.com/api/contact', {
+                  name: form.get('name'),
+                  email: form.get('email'),
+                  message: form.get('message'),
+                });
+                e.currentTarget.reset();
+                alert('Message sent!');
+              } catch (error) {
+                console.error('Failed to send message:', error);
+                alert('Failed to send message.');
+              }
+            }}
+            className="space-y-4"
+          >
+            <input name="name" placeholder="Your Name" className="input w-full" required />
+            <input name="email" type="email" placeholder="Your Email" className="input w-full" required />
+            <textarea name="message" placeholder="Your Message" className="input w-full h-32" required />
+            <button type="submit" className="btn-primary w-full">Send Message</button>
+          </form>
         </div>
       </section>
 
