@@ -16,18 +16,8 @@ const socialLinks = [
     href: 'https://leetcode.com/dheerajsonekar2/',
     icon: <SiLeetcode className="hover:text-orange-500 w-6 h-6" />,
     label: 'LeetCode',
-  },
-  {
-  href: 'https://topmate.io/kalki_dsa_discussion',
-  icon: (
-    <img
-      src="/topmate-light.svg" 
-      alt="Topmate"
-      className="w-7 h-7 object-contain hover:brightness-125"
-    />
-  ),
-  label: 'Topmate',
-}
+  }
+  
 
   
 ];
