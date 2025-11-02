@@ -16,7 +16,7 @@ type Project = {
 export default function HomePage() {
   const projects: Project[] = [
     {
-      title: "School Management system(freelancing project)",
+      title: "School Management system",
       description: "A full-stack app with student, teacher and principal dashboards, payment, and live updates.",
       githubUrl: "https://github.com/Dheerajsonekar/Head_Sir_School",
       demoUrl: "https://head-sir-schoolfrontend.vercel.app/",
@@ -97,7 +97,7 @@ export default function HomePage() {
             Dheeraj Sonekar
           </h1>
           <p className="text-3xl sm:text-5xl font-semibold gradient-text mt-2">
-            Full Stack Developer
+            Software Engineer
           </p>
           <SocialIcons />
         </div>
@@ -130,26 +130,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800 dark:text-white reveal">Experience</h2>
           
           <div className="space-y-8 ">
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
-              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                Software engineer
-              </h3>
-              <p className="text-sm text-gray-500">Freelancer – June 2024 - present</p>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">
-                
-                Built full-stack applications using React, SQL, and Express. Worked on integration and backend APIs.
-              </p>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">
-                
-               Developed and delivered a full-stack School Management System with dashboards, auth, payments integration.
- 
-              </p>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">
-                
-              Developing a website for a Soya Paneer startup, covering backend, frontend with branding.
- 
-              </p>
-            </div>
+            
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition reveal">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                 Full Stack Developer – Intern
@@ -163,70 +144,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="relative overflow-hidden bg-white dark:bg-gray-950 py-20 px-6">
-        {/* Professional Rotating Elements */}
-        <div className="absolute inset-0 pointer-events-none z-0">
-          <div className="absolute w-16 h-16 top-20 left-20 animate-spin opacity-20" style={{animationDuration: '20s'}}>
-            <div className="w-full h-full border-2 border-blue-500/40 rounded-full"></div>
-            <div className="absolute top-2 left-2 w-12 h-12 border-2 border-blue-500/40 rounded-full"></div>
-          </div>
-          <div className="absolute w-20 h-20 top-1/2 right-32 animate-spin opacity-20" style={{animationDuration: '25s', animationDirection: 'reverse'}}>
-            <div className="w-full h-full border-2 border-gray-500/40 rounded-full"></div>
-            <div className="absolute top-2 left-2 w-16 h-16 border-2 border-gray-500/40 rounded-full"></div>
-          </div>
-          <div className="absolute w-12 h-12 bottom-32 left-1/3 animate-spin opacity-20" style={{animationDuration: '15s'}}>
-            <div className="w-full h-full border-2 border-purple-500/40 rounded-full"></div>
-            <div className="absolute top-1 left-1 w-10 h-10 border-2 border-purple-500/40 rounded-full"></div>
-          </div>
-        </div>
-
-        {/* Background animation */}
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute w-72 h-72 bg-gradient-to-tr from-purple-300 to-pink-300 opacity-20 blur-3xl top-10 left-[-100px] animate-pulse-slow" />
-          <div className="absolute w-96 h-96 bg-gradient-to-br from-blue-300 to-cyan-300 opacity-20 blur-3xl bottom-[-80px] right-[-120px] animate-float" />
-        </div>
-
-        <div className="max-w-5xl mx-auto relative z-10">
-          <h2 className="text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white">My Services</h2>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm sm:text-base">
-            <a href="https://www.fiverr.com/s/BRev8jd" target="_blank" className="text-blue-600 hover:underline">Fiverr</a>
-            <a href="https://www.freelancer.com" target="_blank" className="text-blue-600 hover:underline">Freelancer</a>
-            <a href="https://www.upwork.com" target="_blank" className="text-blue-600 hover:underline">Upwork</a>
-            <a href="https://www.peopleperhour.com" target="_blank" className="text-blue-600 hover:underline">PeoplePerHour</a>
-            <a href="https://www.truelancer.com" target="_blank" className="text-blue-600 hover:underline">Truelancer</a>
-            <a href="mailto:dheerajsonekar166@gmail.com" className="text-blue-600 hover:underline">Email for Custom Project</a>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Web Development</h3>
-              <p className="text-sm text-gray-500">React / Next.js / APIs</p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Mobile-Ready Dashboards</h3>
-              <p className="text-sm text-gray-500">Admin panels & client portals</p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">E-commerce Solutions</h3>
-              <p className="text-sm text-gray-500">Cart / Payment / Delivery system</p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Digital Platform Setup</h3>
-              <p className="text-sm text-gray-500">Convert offline to online</p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">AI Integrations</h3>
-              <p className="text-sm text-gray-500">Chatbot / GPT tools / Automation</p>
-            </div>
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Game UI / Interactive Apps</h3>
-              <p className="text-sm text-gray-500">Mini-games / Engaging UIs</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Projects Section */}
       <section id="projects" className="relative bg-gray-50 dark:bg-gray-900 py-20 px-6">
@@ -382,12 +300,7 @@ export default function HomePage() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
-              <p className="text-gray-700 dark:text-gray-300 italic">
-                &quot;Dheeraj delivered our web app with high-quality code and impressive attention to detail. His backend logic and API integration were solid!&quot;
-              </p>
-              <p className="text-sm text-blue-500 mt-2 text-right">– Client, Freelance Project</p>
-            </div>
+            
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
               <p className="text-gray-700 dark:text-gray-300 italic">
